@@ -32,7 +32,9 @@ public class JavaExerciciosDia30_08 {
         saldoConta = saldoConta - saque;
                 
         System.out.println("Saldo atual após o saque: R$" + saldoConta);
-        
+
+
+        sc.close();
         
         
     }
