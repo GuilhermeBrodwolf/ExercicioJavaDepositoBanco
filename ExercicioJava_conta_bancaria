@@ -1,0 +1,40 @@
+
+package javaexerciciosdia30_08;
+/**
+ *
+ * @author guilherme_nones
+ */
+import java.util.Scanner;
+
+
+public class JavaExerciciosDia30_08 {
+    
+   
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        
+       // 2)Desenvolva um algoritmo que simule um banco, realize um depósito, atualização do saldo, e após isso, uma retirada e nova atualização do saldo.
+           
+        float saldoConta = 0f;
+        System.out.println("O saldo é: R$" + saldoConta);
+        
+        System.out.println("Informe o valor para depositar: R$");
+        
+        saldoConta = sc.nextFloat();
+        
+        System.out.println("Seu saldo agora é: R$" + saldoConta);
+        //agora vamos realizar um saque
+        System.out.println("Qual o valor do saque? R$");
+        
+        float saque = sc.nextFloat();
+        saldoConta = saldoConta - saque;
+                
+        System.out.println("Saldo atual após o saque: R$" + saldoConta);
+        
+        
+        
+    }
+    
+}
